@@ -1,6 +1,40 @@
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/*
+You are invited to a party. To entertain the guests, the host decides to conduct a game. Each guest (including you) is
+given with a list of positive integers. The guests will have to rearrange those numbers to form the largest number possible.
+The guest who forms the largest number in quickest time wins. Your task would be to rearrange the numbers and form the
+largest number. Since, the result could be very large, you need to return the result in string format.
+
+Example 1:
+
+Input:
+N = 5
+Arr[] = {3, 30, 34, 5, 9} 9534330
+Output: 9534330
+Explanation: Given numbers are {3, 30, 34,
+5, 9}, the arrangement 9534330 gives the
+largest value.
+
+Example 2:
+
+Input:
+N = 4
+Arr[] = {54, 546, 548, 60}
+Output: 6054854654
+Explanation: Given numbers are {54, 546,
+548, 60}, the arrangement 6054854654
+gives the largest value.
+
+Example 3:
+
+Input:
+N = 4
+Arr[] = {138, 359, 178, 398, 295, 905, 610, 232, 746, 176, 636, 299, 143, 400, 969, 413, 261, 558, 595, 9, 396, 969, 114, 531, 7, 963, 943, 366, 83}
+Output: 9969963943905837746636610595558531413400398396366359299295261232178176143138114
+
+*/
 public class LargestNumberFormedByArray {
 
     public static String printLargest(String[] arr) {
@@ -56,46 +90,15 @@ public class LargestNumberFormedByArray {
     }
 
     public static void main(String[] args) {
-//        String[] arr = {"3", "30", "34", "5", "9"};
-        String[] arr = {"138", "359", "178", "398", "295", "905", "610", "232", "746", "176", "636", "299", "143", "400", "969", "413", "261", "558", "595", "9", "396", "969", "114", "531", "7", "963", "943", "366", "83"};
+        String[] arr = {"3", "30", "34", "5", "9"};
         System.out.println(printLargest(arr));
     }
-/*
-Given a list of non negative integers, arrange them in such a manner that they form the largest number possible.The result is going to be very large, hence return the result in the form of a string.
-
-Example 1:
-
-Input:
-N = 5
-Arr[] = {3, 30, 34, 5, 9} 9534330
-9
-5
-36
-3314
-33
-33
-30
-
-Output: 9534330
-Explanation: Given numbers are {3, 30, 34,
-5, 9}, the arrangement 9534330 gives the
-largest value.
 
 
-Example 2:
-
-Input:
-N = 4
-Arr[] = {54, 546, 548, 60}
-Output: 6054854654
-Explanation: Given numbers are {54, 546,
-548, 60}, the arrangement 6054854654
-gives the largest value.
 
 
-*/
 
-
+}
 //    public class Main {
 //        public static void main(String[] args) {
 //            ArrayList<String> arr = new ArrayList<>();
@@ -154,5 +157,3 @@ gives the largest value.
 //            return sb.toString();
 //        }
 //    }
-
-}
